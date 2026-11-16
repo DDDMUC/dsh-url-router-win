@@ -1,5 +1,7 @@
 # dsh-url-router-win
 
+> 仓库：<https://github.com/DDDMUC/dsh-url-router-win> · npm：[`dsh-url-router-win`](https://www.npmjs.com/package/dsh-url-router-win)
+
 **DSH 地址栏路由插件的 Windows 版。** 每个界面都有自己的链接 —— 会话、主面板、插件页与组件页、任务看板、设置 —— 整行就是真链接；桌面版把地址栏画进 **Windows 标题栏**（`#dsh-url-router-titlebar`），点一下全选，并列出最近用过的界面和粘贴过的链接。
 
 > 这是 `dsh-url-router` 的**Windows 专用**构建。macOS 标题条那条路径（固定线、空段搜索、corner / 右栏夹取、重叠兜底、条模式）**不在这个包里** —— 那部分交给 [`dsh-topbar`](https://github.com/DDDMUC/dsh-topbar)。完整文档、路由契约、给 AI 用的清单接口，见原仓：<https://github.com/DDDMUC/dsh-url-router>。
