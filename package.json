@@ -1,0 +1,63 @@
+{
+  "name": "dsh-url-router-win",
+  "version": "0.0.3",
+  "description": "DSH 地址栏路由插件的 Windows 版：每个界面都有自己的链接（会话 / 主面板 / 插件页与组件页 / 任务看板 / 设置），整行即真链接；地址栏画进 Windows 标题栏，点一下全选、并列出最近用过的界面与粘贴过的链接。macOS 标题条交给 dsh-topbar，本包不含 mac 那条路径。",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DDDMUC/dsh-url-router-win.git"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-api-workspace-controller",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.0-rc.2": "compatible",
+        "0.2.1-rc.3": "compatible",
+        "0.2.2-rc.2": "compatible",
+        "0.2.2-rc.3": "compatible"
+      }
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "AGENTS.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "url",
+    "router",
+    "windows",
+    "deep-link"
+  ],
+  "license": "MIT"
+}
