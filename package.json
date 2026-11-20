@@ -1,6 +1,6 @@
 {
   "name": "dsh-url-router-win",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "DSH 地址栏路由插件的 Windows 版：每个界面都有自己的链接（会话 / 主面板 / 插件页与组件页 / 任务看板 / 设置），整行即真链接；地址栏画进 Windows 标题栏，点一下全选、并列出最近用过的界面与粘贴过的链接。macOS 标题条交给 dsh-topbar，本包不含 mac 那条路径。",
   "repository": {
     "type": "git",
